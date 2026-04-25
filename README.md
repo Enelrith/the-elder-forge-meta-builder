@@ -22,10 +22,6 @@ Download the latest release from the [Releases](https://github.com/Enelrith/the-
 You can verify the file integrity using the SHA-256 checksum provided on the release page:
 
 ```
-# Run this in PowerShell to verify
-certutil -hashfile TheElderForge-MetaBuilder.exe SHA256
-```
-
 ---
 
 ## Usage
