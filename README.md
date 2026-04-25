@@ -2,7 +2,7 @@
 
 A lightweight CLI tool that scans your **Mod Organizer 2** mods folder, reads each mod's `meta.ini` file, and produces a `mod_data.txt` file containing the Nexus mod ID, category, and optionally the associated plugin files for each mod.
 
-This file is consumed by the [Elder Forge](https://github.com/enelrith/theelderforge) web application to enrich your modlist with category data and mod/plugin associations.
+This file is consumed by the [Elder Forge](https://github.com/Enelrith/The-Elder-Forge) web application to enrich your modlist with category data and mod/plugin associations.
 
 ---
 
@@ -15,7 +15,7 @@ This file is consumed by the [Elder Forge](https://github.com/enelrith/theelderf
 
 ## Download
 
-Download the latest release from the [Releases](https://github.com/enelrith/theelderforge/releases) page.
+Download the latest release from the [Releases](https://github.com/Enelrith/the-elder-forge-meta-builder/releases) page.
 
 > **Note:** Windows SmartScreen may show a warning on first launch. This is a known false positive with PyInstaller-packaged executables. Click **More info → Run anyway** to proceed.
 
@@ -23,14 +23,14 @@ You can verify the file integrity using the SHA-256 checksum provided on the rel
 
 ```
 # Run this in PowerShell to verify
-certutil -hashfile ElderForge-MetaBuilder.exe SHA256
+certutil -hashfile TheElderForge-MetaBuilder.exe SHA256
 ```
 
 ---
 
 ## Usage
 
-1. **Run** `ElderForge-MetaBuilder.exe`
+1. **Run** `TheElderForge-MetaBuilder.exe`
 2. **Enter the path** to your MO2 `/mods` folder when prompted, for example:
    ```
    C:\Modding\MO2\mods
@@ -96,16 +96,15 @@ Requires Python 3.10+.
 
 ```bash
 # Clone the repo
-git clone https://github.com/enelrith/theelderforge.git
-cd theelderforge/tools/meta-builder
+git clone https://github.com/Enelrith/the-elder-forge-meta-builder.git
 
 # Run directly
 python meta_builder.py
 
 # Build the exe
 pip install pyinstaller
-pyinstaller --onefile --name "ElderForge-MetaBuilder" meta_builder.py
-# Output: dist/ElderForge-MetaBuilder.exe
+pyinstaller --onefile --name "TheElderForge-MetaBuilder" meta_builder.py
+# Output: dist/TheElderForge-MetaBuilder.exe
 ```
 
 ---
