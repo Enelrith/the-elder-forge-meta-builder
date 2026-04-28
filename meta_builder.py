@@ -77,9 +77,9 @@ def write_output(results: list[dict], mods_folder: Path) -> Path:
     with open(output_path, "w", encoding="utf-8") as f:
         for entry in results:
             print(f"Writing data for {entry['mod_name']}..")
-            line = f"mod_name={entry['mod_name']} modid={entry['mod_id']} nexusCategory={entry['nexus_category']}"
+            line = f"mod_name={entry['mod_name']}|modid={entry['mod_id']}|nexusCategory={entry['nexus_category']}"
             for plugin in entry["plugins"]:
-                line += f" plugin={plugin}"
+                line += f"|plugin={plugin}"
             f.write(line + "\n")
             print("  Done!")
     return output_path
